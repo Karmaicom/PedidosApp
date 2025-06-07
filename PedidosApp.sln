@@ -27,6 +27,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Infra.Data", "Pe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Infra.Data.Tests", "PedidosApp.Infra.Data.Tests\PedidosApp.Infra.Data.Tests.csproj", "{874B5ECD-5FE9-4D79-8F0E-0CDEA92CAE28}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{52659E7C-70C9-4904-ADAF-87FEB4C96534}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
