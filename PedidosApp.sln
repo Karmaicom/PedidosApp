@@ -1,11 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36202.13 d17.14
+VisualStudioVersion = 17.14.36202.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Api", "PedidosApp.Api\PedidosApp.Api.csproj", "{7A51D77D-22A9-4B42-B9F6-32841D31CBC9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Api.Tests", "PedidosApp.Api.Tests\PedidosApp.Api.Tests.csproj", "{3D638655-B477-4A11-AE3A-3B85F4A781A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Presentation", "1 - Presentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{B92F757F-A6E6-473E-8C02-DC4979280AC0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{54FCDC62-FD05-46EC-890D-87625C534143}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infrastructure", "4 - Infrastructure", "{34606D65-8B7B-4EEA-9B2A-B8E543ABEAAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Application", "PedidosApp.Application\PedidosApp.Application.csproj", "{CF122956-4CBA-4AF1-B9D8-808618C95E74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Application.Tests", "PedidosApp.Application.Tests\PedidosApp.Application.Tests.csproj", "{96A74F01-5962-48D6-9065-6BA63C1FD772}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Domain", "PedidosApp.Domain\PedidosApp.Domain.csproj", "{4913B34B-8BF0-4593-8DF6-AE0A33AEDD8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Domain.Tests", "PedidosApp.Domain.Tests\PedidosApp.Domain.Tests.csproj", "{BE104342-2AD6-4C03-BD81-9AD73FDCC141}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Infra.Data", "PedidosApp.Infra.Data\PedidosApp.Infra.Data.csproj", "{45096FC9-91CE-4D81-B4C7-D2034257F5B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PedidosApp.Infra.Data.Tests", "PedidosApp.Infra.Data.Tests\PedidosApp.Infra.Data.Tests.csproj", "{874B5ECD-5FE9-4D79-8F0E-0CDEA92CAE28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +41,43 @@ Global
 		{3D638655-B477-4A11-AE3A-3B85F4A781A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D638655-B477-4A11-AE3A-3B85F4A781A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D638655-B477-4A11-AE3A-3B85F4A781A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF122956-4CBA-4AF1-B9D8-808618C95E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF122956-4CBA-4AF1-B9D8-808618C95E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF122956-4CBA-4AF1-B9D8-808618C95E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF122956-4CBA-4AF1-B9D8-808618C95E74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A74F01-5962-48D6-9065-6BA63C1FD772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A74F01-5962-48D6-9065-6BA63C1FD772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A74F01-5962-48D6-9065-6BA63C1FD772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A74F01-5962-48D6-9065-6BA63C1FD772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4913B34B-8BF0-4593-8DF6-AE0A33AEDD8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4913B34B-8BF0-4593-8DF6-AE0A33AEDD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4913B34B-8BF0-4593-8DF6-AE0A33AEDD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4913B34B-8BF0-4593-8DF6-AE0A33AEDD8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE104342-2AD6-4C03-BD81-9AD73FDCC141}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE104342-2AD6-4C03-BD81-9AD73FDCC141}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE104342-2AD6-4C03-BD81-9AD73FDCC141}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE104342-2AD6-4C03-BD81-9AD73FDCC141}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45096FC9-91CE-4D81-B4C7-D2034257F5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45096FC9-91CE-4D81-B4C7-D2034257F5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45096FC9-91CE-4D81-B4C7-D2034257F5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45096FC9-91CE-4D81-B4C7-D2034257F5B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{874B5ECD-5FE9-4D79-8F0E-0CDEA92CAE28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{874B5ECD-5FE9-4D79-8F0E-0CDEA92CAE28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{874B5ECD-5FE9-4D79-8F0E-0CDEA92CAE28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{874B5ECD-5FE9-4D79-8F0E-0CDEA92CAE28}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7A51D77D-22A9-4B42-B9F6-32841D31CBC9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{3D638655-B477-4A11-AE3A-3B85F4A781A9} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{CF122956-4CBA-4AF1-B9D8-808618C95E74} = {B92F757F-A6E6-473E-8C02-DC4979280AC0}
+		{96A74F01-5962-48D6-9065-6BA63C1FD772} = {B92F757F-A6E6-473E-8C02-DC4979280AC0}
+		{4913B34B-8BF0-4593-8DF6-AE0A33AEDD8C} = {54FCDC62-FD05-46EC-890D-87625C534143}
+		{BE104342-2AD6-4C03-BD81-9AD73FDCC141} = {54FCDC62-FD05-46EC-890D-87625C534143}
+		{45096FC9-91CE-4D81-B4C7-D2034257F5B5} = {34606D65-8B7B-4EEA-9B2A-B8E543ABEAAE}
+		{874B5ECD-5FE9-4D79-8F0E-0CDEA92CAE28} = {34606D65-8B7B-4EEA-9B2A-B8E543ABEAAE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28C01C1B-B424-47FE-86E9-1FD2A29EBC40}
